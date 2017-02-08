@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>This Side of Rice</title>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+		<style>
+			@font-face {
+			    font-family: 'Romana Bold';
+			    src: url('fonts/romana-bold.ttf');
+			}
+			@font-face {
+			    font-family: 'Karla';
+			    src: url('fonts/karla-regular.ttf');
+			}
+			@font-face {
+			    font-family: 'Karla Bold';
+			    src: url('fonts/karla-bold.ttf');
+			}
+
+			body {
+				margin: 0;
+				background: #ba8568 url('img/table.jpg') repeat fixed;
+				background-size: 400px auto;
+				overflow-x: hidden;
+			}
+
+			.scroll {
+				width: 8000px;
+				position: fixed;
+			}
+
+			img, .title { display: block; position: absolute; }
+
+			h1 { 
+				font: normal 4.3em/1em 'Romana Bold', serif;
+				margin-bottom: -0.1em;
+			}
+			h2 {
+				font: normal 1.5em/1.2em 'Karla Bold', sans-serif;
+				letter-spacing: -1px;
+			}
+			h3 { font: normal 1em/0em 'Karla', sans-serif; }
+
+			.title { width: 25vw; top: 16vh; left: 36vw; z-index: 100; }
+				.title h1 { color: #404559; }
+				.title h2 { color: #bd625f; }
+				.title h3 { color: #e39b59; }
+			.chopsticks { height: 97vh; top: -5vh; left: 20vw; }
+			.napkin { height: 70vh; top: 14vh; left: 32vw; }
+			.green-cloth { height: 100vh; top: 0; left: 80vw; }
+			.sesame-balls { height: 70vh; top: 10vh; left: 110vw; }
+			.ice-cream { height: 55vh; top: 50vh; left: 155vw; }
+			.cookies { height: 60vh; top: -8vh; left: 180vw; }
+			.blue-cloth { height: 100vh; top: 0; left: 210vw; }
+			.steamed-egg { height: 70vh; top: 25vh; left: 230vw; }
+			.scrambled-eggs { height: 70vh; top: -10vh; left: 270vw; }
+			.toast { height: 54vh; top: 15vh; left: 305vw; }
+			.purple-cloth { height: 100vh; top: 0; left: 330vw; }
+		</style>
+	</head>
+	<body>
+		<div class="scroll">
+			<div class="title">
+				<h1>This Side of Rice</h1>
+				<h2>A Chinese-American's<br>Kitchen Table</h2>
+				<h3>By Jenny Zhang</h3>
+			</div>
+			<img class="chopsticks" src="img/chopsticks.png" alt="">
+			<img class="napkin" src="img/napkin.png" alt="">
+			<img class="green-cloth" src="img/green-cloth.png" alt="">
+			<img class="sesame-balls" src="img/sesame-balls.png" alt="">
+			<img class="ice-cream" src="img/ice-cream.png" alt="">
+			<img class="cookies" src="img/cookies.png" alt="">
+			<img class="blue-cloth" src="img/blue-cloth.png" alt="">
+			<img class="steamed-egg" src="img/steamed-egg.png" alt="">
+			<img class="scrambled-eggs" src="img/scrambled-eggs.png" alt="">
+			<img class="toast" src="img/toast.png" alt="">
+			<img class="purple-cloth" src="img/purple-cloth.png" alt="">
+		</div>
+		
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	    <script type="text/javascript" src="jInvertScroll/dist/js/jquery.jInvertScroll.js"></script>
+	    <script type="text/javascript">
+	    (function($) {
+	        $.jInvertScroll(['.scroll'],
+	            {
+	            height: 5000,
+	            onScroll: function(percent) {
+	                console.log(percent);
+	            }
+	        });
+	    }(jQuery));
+	    </script>
+    </body>
+</html>
+
