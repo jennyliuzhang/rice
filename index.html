@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<title>This Side of Rice</title>
+		<link rel="shortcut icon" href="favico.png">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
 		<style>
 			@font-face {
@@ -24,12 +25,12 @@
 				overflow-x: hidden;
 			}
 
+			img, div { display: block; position: absolute; }
+
 			.scroll {
 				width: 12000px;
 				position: fixed;
 			}
-
-			img, .title { display: block; position: absolute; }
 
 			h1 { 
 				font: normal 4.3em/1em 'Romana Bold', serif;
@@ -40,34 +41,111 @@
 				letter-spacing: -1px;
 			}
 			h3 { font: normal 1em/0.4em 'Karla', sans-serif; }
+			p {
+				font: normal 1em/1.4em 'Karla', sans-serif;
+			}
+			blockquote {
+				margin: 10px 20px;
+				font: normal 1.15em/1.4em 'Romana Bold', serif;
+				letter-spacing: 0.05em;
+			}
+				blockquote div.byline {
+					position: relative;
+					font: normal 1em/1.4em 'Karla', sans-serif;
+					text-align: right;
+				}
+
+			.emphasis { color: #fff; font-weight: bold; display: inline-block; margin-bottom: 7px; }
+			.emphasis-2 { font: normal 1.15em/1.15em 'Romana Bold', serif; letter-spacing: 0.03em; }
 
 			.title { width: 350px; top: 13vh; left: 420px; z-index: 100; }
 				.title h1 { color: #404559; }
 				.title h2 { color: #bd625f; }
-				.title h3 { color: #e39b59; }
+				.title h3 { color: #d48e4d; }
 			.chopsticks { min-height: 670px; height: 97vh; top: -5vh; left: 210px; }
 			.napkin { min-height: 480px; height: 67vh; top: 12vh; left: 360px; }
-			.green-cloth { min-height: 800px; height: 100vh; top: 0; left: 1060px; }
-			.sesame-balls { min-height: 520px; height: 70vh; top: 10vh; left: 1550px; }
-			.ice-cream { min-height: 420px; height: 55vh; top: 50vh; left: 2180px; }
-			.cookies { min-height: 420px; height: 60vh; top: -10vh; left: 2450px; }
-			.blue-cloth { min-height: 800px; height: 100vh; top: 0; left: 3250px; }
-			.steamed-egg { min-height: 450px; height: 70vh; top: 15vh; left: 3000px; }
-			.scrambled-eggs { min-height: 500px; height: 70vh; top: -10vh; left: 3700px; }
-			.toast { min-height: 430px; height: 54vh; top: 20vh; left: 4200px; }
-			.purple-cloth { min-height: 800px; height: 100vh; top: 0; left: 4700px; }
-			.dou-miao { min-height: 460px; height: 75vh; top: 15vh; left: 4800px; }
-			.rainbow-chard { min-height: 460px; height: 65vh; top: 40vh; left: 5700px; }
-			.green-beans { min-height: 470px; height: 60vh; top: -15vh; left: 6200px; }
-			.pink-mat { min-height: 800px; height: 100vh; top: 0; left: 6900px; z-index: -1; }
-			.buns { min-height: 450px; height: 70vh; top: 15vh; left: 6900px; }
-			.scones { min-height: 410px; height: 60vh; top: 48vh; left: 7660px; }
-			.frosting { min-height: 400px; height: 60vh; top: -15vh; left: 7890px; }
-			.cupcakes { min-height: 450px; height: 70vh; top: 5vh; left: 8200px; }
-			.teal-cloth { min-height: 800px; height: 100vh; top: 0; left: 8700px; z-index: -2; }
-			.shaomai { min-height: 460px; height: 72vh; top: 15vh; left: 9150px; }
-			.ribs { min-height: 330px; height: 53vh; top: 52vh; left: 9750px; }
-			.wings { min-height: 370px; height: 50vh; top: -3vh; left: 10350px; }
+			.introduction { width: 420px; top: 13vh; left: 980px; }
+				.introduction p {
+					font-size: 1.05em;
+					color: #f1ceb0;
+					text-shadow: 0 0 5px #aa703d;
+				}
+				.introduction blockquote { color: #fff; text-shadow: 0 0 5px #aa703d; }
+			.green-cloth { min-height: 800px; height: 100vh; top: 0; left: 1460px; }
+			.sesame-balls { min-height: 520px; height: 70vh; top: 10vh; left: 1950px; }
+				.sesame-balls-1 {
+					width: 280px; top: 55vh; left: 1660px;
+					text-align: right;
+					-ms-transform: rotate(-6deg);
+	    			-webkit-transform: rotate(-6deg);
+	    			transform: rotate(-6deg);
+				}
+					.sesame-balls-char { min-height: 150px; height: 22vh; top: -20vh; left: -10px; }
+					.sesame-balls-1 h1 { color: #30742b; text-shadow: 0 0 6px #3d8839; }
+				.sesame-balls-2 {
+					width: 280px; top: 5vh; left: 2480px;
+					-ms-transform: rotate(-6deg);
+	    			-webkit-transform: rotate(-6deg);
+	    			transform: rotate(-6deg);
+				}
+					.sesame-balls-2 p { color: #c7d1e1; text-shadow: 0 0 6px #3d8839; }
+				.sesame-balls-3 {
+					width: 280px; top: 32vh; left: 2590px;
+				}
+					.sesame-balls-3 p { color: #ecd9c4; text-shadow: 0 0 6px #3d8839; }
+					.sesame-balls-3 .emphasis-2 { color: #f7c9a3; }
+				.sesame-balls-4 {
+					width: 370px; top: 60vh; left: 3030px;
+					-ms-transform: rotate(3deg);
+	    			-webkit-transform: rotate(3deg);
+	    			transform: rotate(3deg);
+				}
+					.sesame-balls-4 p { color: #d5d7c5; text-shadow: 0 0 6px #3d8839; }
+					.sesame-balls-4 .emphasis-2 { color: #ffd9ba; }
+			.ice-cream { min-height: 420px; height: 55vh; top: 50vh; left: 2580px; }
+			.cookies { min-height: 420px; height: 60vh; top: -10vh; left: 2950px; }
+			.blue-cloth { min-height: 800px; height: 100vh; top: 0; left: 3650px; }
+			.steamed-egg { min-height: 450px; height: 70vh; top: -5vh; left: 4650px; }
+				.eggs-1 {
+					width: 280px; top: 52vh; left: 3820px;
+					text-align: right;
+					-ms-transform: rotate(-2deg);
+	    			-webkit-transform: rotate(-2deg);
+	    			transform: rotate(-2deg);
+				}
+					.eggs-1 p { font-size: 1.6em; font-weight: bold; color: #e6e8c5; text-shadow: 0 0 6px #7aa8a1; }
+				.eggs-2 {
+					width: 300px; top: 5vh; left: 4000px;
+				}
+					.eggs-2 p { color: #d6f2ee; text-shadow: 0 0 6px #7aa8a1; }
+				.eggs-3 {
+					width: 320px; top: 23vh; left: 4300px;
+					text-shadow: 0 0 6px #7aa8a1;
+				}
+					.steamed-egg-char { min-height: 110px; height: 17vh; top: -15vh; left: -10px; }
+					.eggs-3 h1 { color: #fff1ad; }
+			.scrambled-eggs { min-height: 500px; height: 70vh; top: -17vh; left: 3550px; }
+			.toast { min-height: 430px; height: 54vh; top: 50vh; left: 4100px; }
+			.purple-cloth { min-height: 800px; height: 100vh; top: 0; left: 5100px; }
+			.dou-miao { min-height: 460px; height: 75vh; top: 15vh; left: 5200px; }
+			.rainbow-chard { min-height: 460px; height: 65vh; top: 40vh; left: 6100px; }
+			.green-beans { min-height: 470px; height: 60vh; top: -15vh; left: 6600px; }
+			.pink-mat { min-height: 800px; height: 100vh; top: 0; left: 7300px; z-index: -1; }
+			.buns { min-height: 450px; height: 70vh; top: 15vh; left: 7300px; }
+			.scones { min-height: 410px; height: 60vh; top: 48vh; left: 8060px; }
+			.frosting { min-height: 400px; height: 60vh; top: -15vh; left: 8290px; }
+			.cupcakes { min-height: 450px; height: 70vh; top: 5vh; left: 8600px; }
+			.teal-cloth { min-height: 800px; height: 100vh; top: 0; left: 9100px; z-index: -2; }
+			.shaomai { min-height: 460px; height: 72vh; top: 15vh; left: 9550px; }
+			.ribs { min-height: 330px; height: 53vh; top: 52vh; left: 10150px; }
+			.wings { min-height: 320px; height: 50vh; top: -5vh; left: 10350px; }
+
+			.chinese:hover { 
+				filter: contrast(105%) brightness(105%); 
+				-ms-transform: rotate(5deg);
+    			-webkit-transform: rotate(5deg);
+    			transform: rotate(5deg);
+			}
 		</style>
 	</head>
 	<body>
@@ -79,25 +157,58 @@
 			</div>
 			<img class="chopsticks" src="img/chopsticks.png" alt="">
 			<img class="napkin" src="img/napkin.png" alt="">
+			<div class="introduction">
+				<p>Growing up in two cultures can force you to choose sides. The choice between soccer practice or Chinese school. The choice between English or Mandarin. The choice between shaomai or chicken wings.</p>
+				<p>Why choose sides when you can have both? The only side I want to choose is a side of rice.</p>
+				<blockquote>&ldquo;In the States, you can buy Chinese food. In Beijing you can buy hamburger. It's very close. Now I feel the world become a big family, like a really big family.&rdquo;
+					<div class="byline">&mdash; Jet Li</div>
+				</blockquote>
+				<p>America, the world, and all of humanity is about variety. If Jet Li says so, it must be true. We're family. Keep your mind, heart, and stomach open.</p>
+				<p><span class="emphasis">Ready to share a meal?</span></p>
+			</div>
 			<img class="green-cloth" src="img/green-cloth.png" alt="">
-			<img class="sesame-balls" src="img/sesame-balls.png" alt="">
+			<img class="sesame-balls chinese" src="img/sesame-balls.png" alt="">
+			<div class="sesame-balls-1">
+				<img class="sesame-balls-char" src="img/sesame-balls-char.png" alt="">
+				<h1 style="font-size: 2.8em;">Sesame Balls</h1>
+			</div>
+			<div class="sesame-balls-2">
+				<p style="font-size: 1.15em;">My favorite thing in the universe is the <span class="emphasis">first bite of a sesame ball.</span></p>
+				<p style="font-size: 1.3em; width: 240px;">My second favorite thing is the <span class="emphasis">second bite.</span></p>
+			</div>
+			<div class="sesame-balls-3">
+				<p style="font-size: 1.4em;"><span class="emphasis-2">Doughy and crunchy.</span><br>The red bean paste inside is <span class="emphasis">warm.</span></p>
+			</div>
+			<div class="sesame-balls-4">
+				<p style="font-size: 1.3em;">As a food group, I'd say it's a dessert snack, like <span class="emphasis">ice cream</span> or <span class="emphasis">cookies.</span> Perfect midnight munchies delicacy. And just like ice cream or cookies,<br>I always want<span class="emphasis-2"><span style="letter-spacing: 0.2em"> m</span><span style="letter-spacing: 0.4em">ore...</span></span></p>
+			</div>
 			<img class="ice-cream" src="img/ice-cream.png" alt="">
 			<img class="cookies" src="img/cookies.png" alt="">
 			<img class="blue-cloth" src="img/blue-cloth.png" alt="">
-			<img class="steamed-egg" src="img/steamed-egg.png" alt="">
+			<img class="steamed-egg chinese" src="img/steamed-egg.png" alt="">
+			<div class="eggs-1">
+				<p>In the morning, I like waking up to eggs.</p>
+			</div>
+			<div class="eggs-2">
+				<p style="font-size: 1.3em;">Some days I want them scrambled or on toast,<br>but some days I'm really craving some <span class="emphasis">steamed egg.</span></p>
+			</div>
+			<div class="eggs-3">
+				<img class="steamed-egg-char" src="img/steamed-egg-char.png" alt="">
+				<h1 style="font-size: 2.8em;">Steamed Egg</h1>
+			</div>
 			<img class="scrambled-eggs" src="img/scrambled-eggs.png" alt="">
 			<img class="toast" src="img/toast.png" alt="">
 			<img class="purple-cloth" src="img/purple-cloth.png" alt="">
-			<img class="dou-miao" src="img/dou-miao.png" alt="">
+			<img class="dou-miao chinese" src="img/dou-miao.png" alt="">
 			<img class="rainbow-chard" src="img/rainbow-chard.png" alt="">
 			<img class="green-beans" src="img/green-beans.png" alt="">
 			<img class="pink-mat" src="img/pink-mat.png" alt="">
-			<img class="buns" src="img/buns.png" alt="">
+			<img class="buns chinese" src="img/buns.png" alt="">
 			<img class="scones" src="img/scones.png" alt="">
 			<img class="frosting" src="img/frosting.png" alt="">
 			<img class="cupcakes" src="img/cupcakes.png" alt="">
 			<img class="teal-cloth" src="img/teal-cloth.png" alt="">
-			<img class="shaomai" src="img/shaomai.png" alt="">
+			<img class="shaomai chinese" src="img/shaomai.png" alt="">
 			<img class="ribs" src="img/ribs.png" alt="">
 			<img class="wings" src="img/wings.png" alt="">
 		</div>
