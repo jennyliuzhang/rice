@@ -23,12 +23,16 @@
 				background: #ba8568 url('img/table.jpg') repeat fixed;
 				background-size: 400px auto;
 				overflow-x: hidden;
+				height: 100%;
 			}
 
 			img, div { display: block; position: absolute; }
 
+			.note { display: none; }
+
 			.scroll {
 				width: 13680px;
+				height: 600px !important;
 				position: fixed;
 			}
 
@@ -376,9 +380,32 @@
     			-webkit-transform: rotate(5deg);
     			transform: rotate(5deg);
 			}
+
+			@media screen and (min-height: 0px)
+				and (max-height: 600px) {
+				body {
+					overflow: hidden;
+				}
+
+				.scroll {
+					display: none;
+				}
+
+				.note {
+					position: relative;
+					display: block;
+					font: bold 2em "Karla", sans-serif;
+					margin: 40vh 0 0 10vw;
+					width: 300px;
+					color: #fff;
+					position: fixed;
+					text-shadow: 0 0 2px #925e31;
+				}
+			}
 		</style>
 	</head>
 	<body>
+		<div class="note">Please make your window taller!</div>
 		<div class="scroll">
 			<div class="title">
 				<h1>This Side of Rice</h1>
