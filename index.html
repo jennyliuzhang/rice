@@ -4,7 +4,40 @@
 		<title>This Side of Rice</title>
 		<link rel="shortcut icon" href="favico.png">
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/cookie.js"></script>
+		<script>
+			$(document).ready(function() {
+				if (getCookie("youveBeenHere") != null) {
+					// do nothing
+				}
+				else {
+					$('#loading').css("display", "block");
+					$('#loading').delay(2500).fadeOut(2000);
+					$('#swirl').delay(1000).fadeOut(1000);
+				}
+			});
+		</script>
 		<style>
+			#loading {
+				position: fixed;
+				display: none;
+				width: 100vw;
+				height: 100vh;
+				background: #ba8568;
+				z-index: 999;
+			}
+
+				#loading img#swirl {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					margin: -35px 0 0 -35px;
+					width: 70px;
+				}
+
 			@font-face {
 			    font-family: 'Romana Bold';
 			    src: url('fonts/romana-bold.ttf');
@@ -96,7 +129,7 @@
 					.sesame-balls-char { height: 150px; height: 156px; top: -142px; left: -10px; }
 					.sesame-balls-1 h1 { color: #30742b; text-shadow: 0 0 3px #3d8839; }
 				.sesame-balls-2 {
-					width: 295px; top: 35px; left: 2480px;
+					width: 295px; top: 60px; left: 2480px;
 					-ms-transform: rotate(-6deg);
 	    			-webkit-transform: rotate(-6deg);
 	    			transform: rotate(-6deg);
@@ -136,14 +169,14 @@
 				}
 					.eggs-1 p { font-size: 1.75em; font-weight: bold; color: #e6e8c5; text-shadow: 0 0 3px #7aa8a1; }
 				.eggs-2 {
-					width: 300px; top: 35px; left: 4000px;
+					width: 300px; top: 55px; left: 4000px;
 				}
 					.eggs-2 p { color: #e0faf6; text-shadow: 0 0 3px #7aa8a1; }
 				.eggs-3 {
 					width: 320px; top: 163px; left: 4300px;
 					text-shadow: 0 0 3px #7aa8a1;
 				}
-					.steamed-egg-char { height: 110px; top: -106px; left: -10px; }
+					.steamed-egg-char { height: 110px; top: -90px; left: -10px; }
 					.eggs-3 h1 { color: #fff1ad; }
 				.eggs-4 {
 					width: 500px; top: 227px; left: 4500px;
@@ -191,7 +224,7 @@
 			}
 			.dou-miao { height: 460px; height: 531px; top: 85px; left: 5200px; }
 				.dou-miao-1 {
-					width: 320px; top: 57px; left: 5730px;
+					width: 320px; top: 70px; left: 5730px;
 					-ms-transform: rotate(-10deg);
 		    		-webkit-transform: rotate(-10deg);
 		    		transform: rotate(-10deg);
@@ -238,13 +271,13 @@
 			}
 			.buns { min-height: 430px; height: 475px; top: 16vh; left: 7320px; }
 				.buns-1 {
-					width: 350px; top: 142px; left: 7800px;
+					width: 350px; top: 162px; left: 7800px;
 					text-align: right;
 					-ms-transform: rotate(-14deg);
 	    			-webkit-transform: rotate(-14deg);
 	    			transform: rotate(-14deg);
 				}
-					.buns-char { height: 120px; top: -106px; left: 10px; }
+					.buns-char { height: 120px; top: -90px; left: 10px; }
 					.buns-1 h1 { font-size: 3.6em; color: #b2858f; text-shadow: 0 0 20px #eacfdc; }
 				.buns-2 {
 					width: 390px; top: 269px; left: 7860px; text-shadow: 0 0 20px #d5b5b9;
@@ -381,7 +414,12 @@
 
 			@media screen and (min-height: 0px)
 				and (max-height: 660px) {
-				body {
+				.scroll { top: -40px; }
+				.green-cloth, .blue-cloth, .purple-cloth, .pink-mat, .teal-cloth {
+					margin-top: 40px;
+				}
+
+/*				body {
 					overflow: hidden;
 				}
 
@@ -398,10 +436,11 @@
 					color: #fff;
 					position: fixed;
 					text-shadow: 0 0 2px #925e31;
-				}
+				}*/
 			}
 
-			@media screen and (min-height: 880px) {
+			@media screen and (min-height: 800px) 
+				{
 				.scroll { top: 90px; }
 				.green-cloth, .blue-cloth, .purple-cloth, .pink-mat, .teal-cloth {
 					margin-top: -90px;
@@ -410,7 +449,8 @@
 		</style>
 	</head>
 	<body>
-		<div class="note">Please make your window taller!</div>
+		<div id="loading"><img id="swirl" src="img/loader.gif" alt=""></div>
+		<div class="note">Please view on your computer!</div>
 		<div class="scroll">
 			<div class="title">
 				<h1>This Side of Rice</h1>
@@ -563,8 +603,7 @@
 			<img class="napkin-2" src="img/napkin-2.png" alt="">
 		</div>
 		
-		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	    <script type="text/javascript" src="jInvertScroll/dist/js/jquery.jInvertScroll.js"></script>
+	    <script type="text/javascript" src="js/jInvertScroll/dist/js/jquery.jInvertScroll.js"></script>
 	    <script type="text/javascript">
 	    (function($) {
 	        $.jInvertScroll(['.scroll'],
