@@ -9,8 +9,8 @@
 		<script type="text/javascript" src="js/cookie.js"></script>
 		<script>
 			$(document).ready(function() {
-				if (getCookie("youveBeenHere") != null) {
-					// do nothing
+				if (getCookie("youveBeenHere") == "yep") {
+					console.log("You've been here before!");
 				}
 				else {
 					$('#loading').css("display", "block");
