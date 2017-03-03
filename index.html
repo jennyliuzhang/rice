@@ -6,6 +6,7 @@
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="js/jsCookie.js"></script>
 		<script type="text/javascript" src="js/cookie.js"></script>
 		<script>
 			$(document).ready(function() {
@@ -14,8 +15,8 @@
 				}
 				else {
 					$('#loading').css("display", "block");
-					$('#loading').delay(2500).fadeOut(2000);
-					$('#swirl').delay(1000).fadeOut(1000);
+					$('#loading').delay(2700).fadeOut(1700);
+					$('#swirl').delay(1500).fadeOut(1500);
 					Cookies.set("youveBeenHere", "yep");
 				}
 			});
