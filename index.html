@@ -3,6 +3,9 @@
 	<head>
 		<title>This Side of Rice</title>
 		<link rel="shortcut icon" href="favico.png">
+		<meta property="og:image" content="img/screenshot.jpg" />
+		<meta property="og:description" content="This Side of Rice by Jenny Zhang" />
+
 		<link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
 
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -14,9 +17,9 @@
 					console.log("You've been here before!");
 				}
 				else {
-					$('#loading').css("display", "block");
-					$('#loading').delay(2700).fadeOut(1700);
-					$('#swirl').delay(1500).fadeOut(1500);
+					// $('#loading').css("display", "block");
+					// $('#loading').delay(8000).fadeOut(1000);
+					// $('#swirl').delay(7000).fadeOut(1000);
 					Cookies.set("youveBeenHere", "yep");
 				}
 			});
@@ -36,8 +39,8 @@
 					position: absolute;
 					top: 50%;
 					left: 50%;
-					margin: -35px 0 0 -35px;
-					width: 70px;
+					margin: -30px 0 0 -30px;
+					width: 60px;
 				}
 
 			@font-face {
@@ -129,7 +132,7 @@
 	    			transform: rotate(-6deg);
 				}
 					.sesame-balls-char { height: 150px; height: 156px; top: -142px; left: -10px; }
-					.sesame-balls-1 h1 { color: #30742b; text-shadow: 0 0 3px #3d8839; }
+					.sesame-balls-1 h1 { color: #2d722a; text-shadow: 0 0 3px #3d8839; }
 				.sesame-balls-2 {
 					width: 295px; top: 60px; left: 2480px;
 					-ms-transform: rotate(-6deg);
@@ -153,7 +156,7 @@
 			.rice-2 { height: 300px; height: 213px; top: 305px; left: 3500px; z-index: 100; }
 			.ice-cream { height: 420px; height: 390px; top: 354px; left: 2580px; }
 			.cookies { height: 420px; height: 425px; top: -71px; left: 2950px; }
-			.blue-cloth { width: 1600px; height: 100vh; top: 0; left: 3650px; }
+			.blue-cloth { width: 1600px; height: 100vh; top: 0; left: 3660px; }
 			.steamed-egg { height: 450px; height: 496px; top: -35px; left: 4650px; }
 				.eggs-0 {
 					width: 280px; top: 404px; left: 3500px;
@@ -194,7 +197,7 @@
 					}
 					.eggs-4 p.savory {
 						top: 71px; left: 20px;
-						font-size: 2.8em; font-weight: bold; color: #f2e8d5; text-shadow: 0 0 3px #7aa8a1;
+						font-size: 2.8em; font-weight: bold; color: #f7e388; text-shadow: 0 0 3px #7aa8a1;
 						-ms-transform: rotate(-3deg);
 		    			-webkit-transform: rotate(-3deg);
 		    			transform: rotate(-3deg);
@@ -280,17 +283,17 @@
 	    			transform: rotate(-14deg);
 				}
 					.buns-char { height: 120px; top: -90px; left: 10px; }
-					.buns-1 h1 { font-size: 3.6em; color: #b2858f; text-shadow: 0 0 20px #eacfdc; }
+					.buns-1 h1 { font-size: 3.6em; color: #a6747f; text-shadow: 0 0 20px #eacfdc; }
 				.buns-2 {
-					width: 390px; top: 269px; left: 7860px; text-shadow: 0 0 20px #d5b5b9;
+					width: 390px; top: 269px; left: 7860px; text-shadow: 0 0 20px #efd9e3;
 				}
 					.buns-2 p {
-						font-size: 1.3em; color: #b2858f;
+						font-size: 1.3em; color: #a6747f;
 					}
 					.buns-2 .emphasis { color: #925a69; text-shadow: 0 0 3px #ddbdbf; margin: 0; }
 					.buns-2 .emphasis-2 { font-size: 1em; letter-spacing: 2px; margin: 0; }
 				.buns-3 {
-					width: 300px; top: 453px; left: 7840px; text-shadow: 0 0 12px #e1bacd;
+					width: 300px; top: 453px; left: 7840px; text-shadow: 0 0 12px #efd9e3;
 					-ms-transform: rotate(3deg);
 	    			-webkit-transform: rotate(3deg);
 	    			transform: rotate(3deg);
@@ -298,9 +301,9 @@
 					.buns-3 .emphasis { color: #7f7c9d; font-size: 2.2em; }
 					.buns-3 .emphasis-2 { color: #925a69; font-size: 2.9em; }
 				.buns-4 {
-					width: 370px; top: 415px; left: 8700px; text-shadow: 0 0 5px #e1bacd;
+					width: 370px; top: 415px; left: 8700px; text-shadow: 0 0 5px #efd9e3;
 				}
-					.buns-4 p { font-size: 1.3em; color: #615e7e; text-shadow: 0 0 3px #e1bacd; }
+					.buns-4 p { font-size: 1.3em; color: #615e7e; text-shadow: 0 0 3px #efd9e3; }
 					.buns-4 .emphasis { color: #925a69; text-shadow: 0 0 3px #ddbdbf; }
 					.buns-4 .emphasis-2 { color: #7f7c9d; }
 					.buns-4 .emphasis, .buns-4 .emphasis-2 { display: inline-block; margin: 0 0 25px; line-height: 0em; }
@@ -321,26 +324,26 @@
 	    			transform: rotate(-6deg);
 				}
 					.shumai-char { height: 170px; top: -156px; left: -10px; }
-					.shumai-1 h1 { font-size: 3.3em; color: #45948b; text-shadow: 0 0 3px #529c9f; }
+					.shumai-1 h1 { font-size: 3.3em; color: #3e7d76; text-shadow: 0 0 3px #3e7d76; }
 				.shumai-2 {
 					width: 260px; top: 71px; left: 10200px;
 					-ms-transform: rotate(-10deg);
 	    			-webkit-transform: rotate(-10deg);
 	    			transform: rotate(-10deg);
 				}
-					.shumai-2 p { font-size: 1.2em; color: #ffece7; text-shadow: 0 0 3px #529c9f; }
+					.shumai-2 p { font-size: 1.2em; color: #c1eff1; text-shadow: 0 0 3px #529c9f; }
 				.shumai-3 {
 					width: 420px; top: 163px; left: 10235px;
 				}
-					.shumai-3 p { font-size: 1.2em; color: #ffece7; text-shadow: 0 0 3px #529c9f; }
-					.shumai-3 .emphasis-2 { font-size: 1.3em; letter-spacing: 0.06em; }
+					.shumai-3 p { font-size: 1.2em; color: #c1eff1; text-shadow: 0 0 3px #529c9f; }
+					.shumai-3 .emphasis-2 { font-size: 1.3em; color: #3b837b; letter-spacing: 0.06em; }
 				.shumai-4 {
 					width: 420px; top: 375px; left: 10990px;
 					-ms-transform: rotate(-8deg);
 	    			-webkit-transform: rotate(-8deg);
 	    			transform: rotate(-8deg);
 				}
-					.shumai-4 p { margin: 0; font-size: 1.75em; color: #ffece7; text-shadow: 0 0 3px #529c9f; }
+					.shumai-4 p { margin: 0; font-size: 1.75em; color: #c1eff1; text-shadow: 0 0 3px #529c9f; }
 					.shumai-4 p.savory .emphasis-2 { font-size: 1.4em; letter-spacing: 0.07em; color: #f7e388; }
 					.shumai-4 p.so {
 						margin: 25px 0 0 25px;
@@ -355,7 +358,7 @@
 		    			-webkit-transform: rotate(10deg);
 		    			transform: rotate(10deg);
 					}
-					.shumai-4 p.good .emphasis-2 { font-size: 2em; letter-spacing: 0.07em; color: #45948b; text-shadow: 0 0 3px #529c9f; } 
+					.shumai-4 p.good .emphasis-2 { font-size: 2em; letter-spacing: 0.07em; color: #3b837b; text-shadow: 0 0 3px #529c9f; } 
 			.ribs { height: 330px; top: 368px; left: 10250px; }
 			.wings { height: 320px; top: -35px; left: 10650px; }
 			.rice-6 { height: 480px; top: 50px; left: 11180px; z-index: 100; 
@@ -487,7 +490,7 @@
 			</div>
 			<div class="sesame-balls-4">
 				<p style="font-size: 1.3em;">As a food group, I'd say it's a dessert snack, like <span class="emphasis">ice cream</span> or <span class="emphasis">cookies.</span><br>
-					The best treat at <span class="emphasis" style="margin: 0; color: #fccdcd">Wai Po's</span> (Grandma's) house. And like ice cream or cookies,<br>I always want<span class="emphasis-2"><span style="letter-spacing: 0.2em"> m</span><span style="letter-spacing: 0.4em">ore...</span></span></p>
+					The best treat at <span class="emphasis" style="margin: 0; color: #ffd9ba">Wai Po's</span> (Grandma's) house. And like ice cream or cookies,<br>I always want<span class="emphasis-2"><span style="letter-spacing: 0.2em"> m</span><span style="letter-spacing: 0.4em">ore...</span></span></p>
 			</div>
 			<img class="ice-cream" src="img/ice-cream.png" alt="">
 			<img class="cookies" src="img/cookies.png" alt="">
@@ -515,7 +518,7 @@
 			</div>
 			<div class="eggs-5">
 				<p style="font-size: 1.15em;">Top with <span class="emphasis">green onion</span>, <span class="emphasis">soy sauce</span>, and a cold, cloudy morning.</p>
-				<p style="font-size: 1.15em; margin-top: -10px; width: 360px;">It sits warm in my belly. I'd slip on my big coat and Dad would drop me off at school.</p>
+				<p style="font-size: 1.15em; margin-top: -10px; width: 360px;">The simplest feel-good comfort food.</p>
 			</div>
 			<img class="scrambled-eggs" src="img/scrambled-eggs.png" alt="">
 			<img class="toast" src="img/toast.png" alt="">
@@ -534,7 +537,7 @@
 			</div>
 			<div class="dou-miao-4">
 				<p>Really similar to how you'd prepare <span class="emphasis" style="color: #edae95">rainbow chard</span> or <span class="emphasis" style="color: #c3e0cf">green beans:</span><br><span class="emphasis-2" style="font-size: 1.4em; letter-spacing: 2px; color: #fff;">super easy.</span></p>
-				<p><span class="emphasis" style="color:#cad8cb">Every culture has that easy, staple veggie dish.</span></p>
+				<p><span class="emphasis" style="color: #bfb9e1;">Every culture has that easy, staple veggie dish.</span></p>
 			</div>
 			<img class="rainbow-chard" src="img/rainbow-chard.png" alt="">
 			<img class="green-beans" src="img/green-beans.png" alt="">
@@ -554,7 +557,7 @@
 				<p style="margin-top: -10px;"><span class="emphasis-2">Warm.</span></p>
 			</div>
 			<div class="buns-4">
-				<p style="color: #b2858f; margin-bottom: -20px;">Some mornings, I'll have a dou sha bao if I'm feeling <span class="emphasis-2">celebratory.</span></p>
+				<p style="color: #a6747f; margin-bottom: -20px;">Some mornings, I'll have a dou sha bao if I'm feeling <span class="emphasis-2">celebratory.</span></p>
 				<p>Kind of like starting the day with a <span class="emphasis">scone</span> or <span class="emphasis">cupcake.</span></p>
 			</div>
 			<img class="scones" src="img/scones.png" alt="">
@@ -568,11 +571,11 @@
 				<h1>Pork Shumai</h1>
 			</div>
 			<div class="shumai-2">
-				<p style="color: #c1eff1;">They may not look it, but shumai are <span class="emphasis">quite filling.</span></p>
+				<p>They may not look it, but shumai are quite filling.</p>
 			</div>
 			<div class="shumai-3">
 				<p style="width: 360px">A <span class="emphasis" style="display: inline;">dim sum</span> staple, I kept my eyes <span style="letter-spacing: 0.05em; color: #f7e388">peeled</span> for the cart with the little <span class="emphasis" style="color: #ffbda8; display: inline;">roe-topped dumplings.</span> The Sunday brunch priority.</p>
-				<p>They're just as <span class="emphasis">tasty</span> and <span class="emphasis">satisfying</span> as <span class="emphasis-2" style="color: #926042">chicken wings</span>&nbsp; or &nbsp;<span class="emphasis-2" style="color: #893b3b">baby back ribs.</span></p>
+				<p>They're just as <span class="emphasis">tasty</span> and <span class="emphasis">satisfying</span> as <span class="emphasis-2">chicken wings</span>&nbsp; or &nbsp;<span class="emphasis-2">baby back ribs.</span></p>
 			</div>
 			<div class="shumai-4">
 				<p class="savory">Always &nbsp;<span class="emphasis-2">savory</span></p>
