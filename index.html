@@ -12,17 +12,17 @@
 		<script type="text/javascript" src="js/jsCookie.js"></script>
 		<script type="text/javascript" src="js/cookie.js"></script>
 		<script>
-			// $(document).ready(function() {
-			// 	if (getCookie("youveBeenHere") == "yep") {
-			// 		console.log("You've been here before!");
-			// 	}
-			// 	else {
-			// 		$('#loading').css("display", "block");
-			// 		$('#loading').delay(8000).fadeOut(1000);
-			// 		$('#swirl').delay(7000).fadeOut(1000);
-			// 		Cookies.set("youveBeenHere", "yep");
-			// 	}
-			// });
+			$(document).ready(function() {
+				if (getCookie("youveBeenHere") == "yep") {
+					console.log("You've been here before!");
+				}
+				else {
+					$('#loading').css("display", "block");
+					$('#loading').delay(8000).fadeOut(1000);
+					$('#swirl').delay(7000).fadeOut(1000);
+					Cookies.set("youveBeenHere", "yep");
+				}
+			});
 		</script>
 		<style>
 			#loading {
